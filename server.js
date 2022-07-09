@@ -38,7 +38,7 @@ app.use(errorHandler);
 
 // mongoDB connection
 mongoose.connect(process.env.DB_URL, {
-    useNewUrlParser: true
+    useNewUrlParser: true, useUnifiedTopology: true
     })
     .then(() => {
         // app listing
