@@ -41,11 +41,9 @@ mongoose.connect(process.env.DB_URL, {
     useNewUrlParser: true, useUnifiedTopology: true
     })
     .then(() => {
-        // app listing
-        app.listen(process.env.PORT || 3000, () => console.log("Server is running on port " + process.env.PORT))
+       console.log("DB connected");
     })
     .catch(err => console.log(err))
 
-
-    // User
-    // Todo
+ // app listing
+ app.listen(process.env.PORT || 3000, () => console.log("Server is running on port " + process.env.PORT))
