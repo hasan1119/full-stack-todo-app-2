@@ -6,6 +6,12 @@ const todoRouter = Router()
 // add a new task
 todoRouter.post('/addnewTask', authChecker, addnewTaskHandler);
 
+
+
+// add a new task
+// todoRouter.post('/addnewTask', authChecker, addnewTaskHandler);
+
+
 // delete a task
 todoRouter.get('/deleteTask/:taskId', authChecker, deleteTaskHandler);
 
